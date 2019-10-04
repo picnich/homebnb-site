@@ -1,30 +1,30 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import Title from 'components/title';
 import { graphql } from 'gatsby';
 
 import { IntroSection, MainTitle } from '../home.css';
-import { FormContact } from "../contact.css"
+// import { FormContact } from "../contact.css"
 
-const Contact = ({ data }) => (
+const EstSuccess = ({ data }) => (
   <Layout>
     <IntroSection bgImg={data.homeJson.mainImg.childImageSharp.fluid.src}>
       <Box>
         <MainTitle>
           <Title as="h1" size="large">
-            {"Contact Us"}
+            {"Success!"}
           </Title>
           <Title as="p" size="large">
-            {"Drop a line and we’ll get back to you as soon as we can."}
+            {"We will get back to you as fast as we can."}
           </Title>
         </MainTitle>
       </Box>
     </IntroSection>
     <section style={{background: '#F1F2F6'}}>
       <Box>
-        <FormContact>
+        {/* <FormContact>
           <form>
             <label htmlFor="introName">
               YOUR NAME
@@ -44,37 +44,20 @@ const Contact = ({ data }) => (
             </label>
             <input type="submit" value="Get your Estimate" />
           </form>
-        </FormContact>
+        </FormContact> */}
       </Box>
-      {/* <Box>
-        <Benefits>
-          {data.homeJson.benefits.map((benefit, i) => {
-            return (
-              <li key={i}>
-                <div className="icon">
-                  <Img fluid={benefit.icon.childImageSharp.fluid} />
-                </div>
-                <Title as="h4" size="small">
-                  {benefit.title}
-                </Title>
-                <p>{benefit.copy}</p>
-              </li>
-              )
-          })}
-        </Benefits>
-      </Box> */}
     </section>
   </Layout>
 );
 
-Contact.propTypes = {
-  data: PropTypes.object.isRequired,
-};
+// EstSuccess.propTypes = {
+//   data: PropTypes.object.isRequired,
+// };
 
-export default Contact;
+export default EstSuccess;
 
 export const query = graphql`
-  query ContactQuery {
+  query EstContactQuest {
     homeJson {
       title
       category
@@ -86,5 +69,5 @@ export const query = graphql`
         }
       } 
     }
-  }
+}
 `;
