@@ -206,7 +206,8 @@ const Index = ({ data }) => {
                 </select>
               </label>
               <input type="submit" value="Get your Estimate" />
-            </form>        </div>
+            </form>        
+          </div>
           <div>
             <Title as="h5" size="small">
               {data.homeJson.cta_2.smalltitle}
