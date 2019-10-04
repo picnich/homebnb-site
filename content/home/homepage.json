@@ -1,5 +1,84 @@
 {
-  "title": "Home",
+  "title": "We manage your apartment so that you don't have to.",
+  "category": "AIRBNB PROPERTY MANAGEMENT",
+  "mainImg": "./icons/homebnbillustration.png",
+  "benefits": [
+    {
+      "icon": "./icons/Icon_money.png",
+      "title": "Higher Returns", 
+      "copy": "We maximize your rental income through targeted listings and market expertise."
+    },
+    {
+      "icon": "./icons/Icon_satisfaction.png",
+      "title": "Increase Guest Satisfaction", 
+      "copy": "We ensure guest satisfaction through prompt communication and professional services."
+    },
+    {
+      "icon": "./icons/Icon_time.png",
+      "title": "Save Yourself Time", 
+      "copy": "Most of all, we help you make a steady income without sacrificing your time."
+    }
+  ],
+  "services": {
+    "title": "We help you maximize your property's value",
+    "copy": "We leverage short term rentals to increase the profitability of your property while giving you flexibility and security.", 
+    "items": [
+      {
+        "icon": "./icons/Icon_target.png",
+        "title": "Targeted Listings", 
+        "copy": "We maintain your listing with up-to-date messaging, photos and prices to help boost the occupancy rates."
+      },
+      {
+        "icon": "./icons/Icon_message.png",
+        "title": "Immediate Responses", 
+        "copy": "We ensure requests and inquiries are responded promptly so thatyou don't miss any potential reservations."
+      },
+      {
+        "icon": "./icons/Icon_Book.png",
+        "title": "Custom Guestbook", 
+        "copy": "We create a customized recommendation booklet per home, ensuring that your guests experience the city as a local."
+      }
+    ]
+  },
+  "keypoints": {
+    "title": "We hold ourselves to high standards", 
+    "items": [
+      "Professional home photography", 
+      "Guest instructions on arriving and house rules",
+      "Guestbook with food and entertainment recommendations",
+      "Guest support available 24/7",
+      "Professional cleaning of your home after each guest's stay", 
+      "Bedding and bath linen sets, vanity kits and coffee", 
+      "On-call staff ensures handling of unexpected situations",
+      "Up-to-date maintenance of listing online"
+    ]
+  },
+  "offering": {
+    "title": "What you get from choosing HomeBnb", 
+    "items": [
+      "Creation of your listing on AirBnb", 
+      "Professional home photography", 
+      "Custom guestbook with food and entertainment recommendations", 
+      "High quality cleaning services", 
+      "Quality bedding and bath linen sets", 
+      "24/7 Assistance for you and your guests"
+    ],
+    "fee": "15%", 
+    "copy": "HomeBnb's share of the generated revenue is 15% with",
+    "highlighted": " no hidden fees."
+  },
+  "cta_1": {
+    "smalltitle": "WANT AN ESTIMATE?",
+    "title": "See how much you can earn from your home.",
+    "btn": "Get your Estimate"
+  },
+  "cta_2": {
+    "smalltitle": "Ready to get started?",
+    "title": "Get your home hosted on HomeBnb today.", 
+    "copy": "Start increasing the profitibility of your property while giving yourself flexibility and security",
+    "btn": "Get Started"
+  },
+
   "content": "intro.md",
   "gallery": [{
     "title": "React Context",

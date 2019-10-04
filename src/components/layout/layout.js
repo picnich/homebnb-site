@@ -3,14 +3,16 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import Head from 'components/head';
 import Header from 'components/header';
+import Footer from 'components/footer';
 import GlobalStyle from 'global.css.js';
 
 const Layout = ({ data, children }) => (
   <div>
     <GlobalStyle />
     <Head />
-    <Header title={data.site.siteMetadata.siteTitle} />
+    <Header title={data.site.siteMetadata.siteTitle} logo={data.site.siteMetadata.logo} />
     {children}
+    <Footer />
   </div>
 );
 
@@ -26,6 +28,7 @@ const LayoutWithQuery = props => (
         site {
           siteMetadata {
             siteTitle
+            logo
           }
         }
       }

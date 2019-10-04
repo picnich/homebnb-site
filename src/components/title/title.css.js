@@ -3,18 +3,32 @@ import MEDIA from 'helpers/mediaTemplates';
 
 export const Text = styled.span`
   display: block;
+  
   font-weight: ${({ size }) => () => {
     switch (size) {
       case 'large':
-        return '400';
+        return 'bold';
       default:
         return '500';
     }
   }};
-  font-size: ${({ size }) => () => {
-    switch (size) {
-      case 'large':
+  
+  color: #0B2A66;
+
+  font-size: ${({ as, size }) => () => {
+    switch (as) {
+      case 'h1':
+        return '4.2rem';
+      case 'h2':
         return '3.2rem';
+      case 'h3':
+        return '2.4rem';
+      case 'h4':
+        return '1.8rem';
+      case 'h5':
+        return '1rem';
+      case 'h6':
+        return '0.875rem';
       default:
         return '2rem';
     }

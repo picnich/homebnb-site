@@ -29,5 +29,15 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Roboto`,
+          `Montserrat\:400,800` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    }
   ],
 };

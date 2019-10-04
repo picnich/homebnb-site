@@ -1,16 +1,17 @@
 const path = require('path');
 
 module.exports = {
-  siteTitle: `Gatsby Universal`,
-  siteTitleShort: `GatsbyU`,
-  siteDescription: `An opinionated starter for Gatsby.`,
-  siteUrl: `https://gu.fabianschultz.com`,
+  siteTitle: `HomeBnb`,
+  siteTitleShort: `HomeBnb`,
+  siteDescription: `We manage your apartment so that you don't have to.`,
+  siteUrl: `https://homebnb.ca`,
   themeColor: `#000`,
   backgroundColor: `#fff`,
   pathPrefix: null,
-  logo: path.resolve(__dirname, 'src/images/icon.png'),
+  logo: path.resolve(__dirname, 'src/images/HomeBnb_Icon.svg'),
+  mainImg: path.resolve(__dirname, 'src/images/homebnbillustration.png'),
   social: {
-    twitter: `gatsbyjs`,
-    fbAppId: `966242223397117`,
+    twitter: `bynichp`,
+    fbAppId: ``,
   },
 };
