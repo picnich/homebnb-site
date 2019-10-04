@@ -69,21 +69,42 @@ const Contact = ({ data }) => {
               >
               <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="contact" />
-              <label htmlFor="introName">
+              <label htmlFor="fullname">
                 YOUR NAME
-                <input id="introName" onChange={handleChange} name="name" type="text" placeholder="John Doe" required/>
+                <input 
+                  // id="name" 
+                  name="fullname" 
+                  type="text" 
+                  placeholder="John Doe" 
+                  onChange={handleChange} 
+                  required />
               </label>
-              <label htmlFor="introEmail">
+              <label htmlFor="email">
                 YOUR EMAIL
-                <input id="introEmail" onChange={handleChange} name="email" type="email" placeholder="john@gmail.com" required />
+                <input 
+                  // id="introEmail" 
+                  name="email" 
+                  type="email" 
+                  placeholder="john@gmail.com" 
+                  onChange={handleChange} 
+                  required />
               </label>
-              <label htmlFor="introSubject">
+              <label htmlFor="subject">
                 YOUR SUBJECT
-                <input id="introSubject" onChange={handleChange} name="name" type="text" placeholder="Subject..." />
+                <input 
+                  // id="introSubject" 
+                  name="subject" 
+                  type="text" 
+                  placeholder="Subject..." 
+                  onChange={handleChange} />
               </label>
-              <label htmlFor="introSubject">
+              <label htmlFor="message">
                 YOUR MESSAGE
-                <textarea placeholder="Type your message here..." onChange={handleChange} required />
+                <textarea
+                name="message"
+                placeholder="Type your message here..." 
+                onChange={handleChange} 
+                required />
               </label>
               <input type="submit" value="Get your Estimate" />
             </form>
