@@ -62,7 +62,15 @@ const Index = ({ data }) => {
             <Title as="h3" size="small">
               {`Sign up to see how much you can earn with your home`}
             </Title>
-            <form name="homeEstimate" method="POST" action="/est-success/" data-netlify="true" onSubmit={handleSubmit}>
+            <form 
+              name="homeEstimate" 
+              method="POST" 
+              action="/est-success/" 
+              data-netlify="true" 
+              onSubmit={handleSubmit}              
+              data-netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="contact" />
               <label htmlFor="introEmail">
                 YOUR EMAIL
@@ -170,7 +178,15 @@ const Index = ({ data }) => {
             <Title as="h2" size="large">
               {data.homeJson.cta_1.title}
             </Title>
-            <form name="homeEstimate" method="POST" action="/est-success/" data-netlify="true" onSubmit={handleSubmit}>
+            <form 
+              name="homeEstimate" 
+              method="POST" 
+              action="/est-success/" 
+              data-netlify="true" 
+              onSubmit={handleSubmit} 
+              data-netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="contact" />
               <label htmlFor="ctaEmail">
                 YOUR EMAIL
