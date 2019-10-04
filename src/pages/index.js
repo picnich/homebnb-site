@@ -4,15 +4,15 @@ import Layout from 'components/layout';
 import Box from 'components/box';
 import Title from 'components/title';
 import { graphql, Link } from 'gatsby';
-import { navigate } from "gatsby-link";
+import { navigate } from 'gatsby-link'
 import Img from "gatsby-image"
 
 import { IntroSection, MainTitle, Benefits, FormSection, Services, Keypoints, Offering, CtaContainer } from '../home.css';
 
 function encode(data) {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
 }
 
 
@@ -63,6 +63,7 @@ const Index = ({ data }) => {
               {`Sign up to see how much you can earn with your home`}
             </Title>
             <form name="homeEstimate" method="POST" action="/est-success/" data-netlify="true" onSubmit={handleSubmit}>
+              <input type="hidden" name="form-name" value="contact" />
               <label htmlFor="introEmail">
                 YOUR EMAIL
                 <input id="introEmail" onChange={handleChange} name="email" type="email" placeholder="john@gmail.com" required />
@@ -170,6 +171,7 @@ const Index = ({ data }) => {
               {data.homeJson.cta_1.title}
             </Title>
             <form name="homeEstimate" method="POST" action="/est-success/" data-netlify="true" onSubmit={handleSubmit}>
+              <input type="hidden" name="form-name" value="contact" />
               <label htmlFor="ctaEmail">
                 YOUR EMAIL
                 <input id="ctaEmail" onChange={handleChange} name="email" type="email" placeholder="john@gmail.com" required/>
