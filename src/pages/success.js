@@ -36,7 +36,7 @@ Success.propTypes = {
 export default Success;
 
 export const query = graphql`
-  query EstContactQuest {
+  query SuccessQuery {
     homeJson {
       title
       category

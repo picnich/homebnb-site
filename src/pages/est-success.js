@@ -57,7 +57,7 @@ const EstSuccess = ({ data }) => (
 export default EstSuccess;
 
 export const query = graphql`
-  query EstContactQuest {
+  query EstSuccesQuery {
     homeJson {
       title
       category
