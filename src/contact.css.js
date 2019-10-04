@@ -6,10 +6,10 @@ export const FormContact = styled.section`
     border-radius: 8px;
     box-shadow: 0px 10px 15px -1px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.06);
     padding: 32px;
-    transform: translateY(-30%);
+    transform: translateY(-20%);
 
     ${MEDIA.TABLET`
-        transform: translateY(-30%);
+        transform: translateY(-20%);
     `};
     ${MEDIA.PHONE`
         transform: translateY(-18%);
