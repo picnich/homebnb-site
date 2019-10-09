@@ -35,13 +35,7 @@ const Contact = ({ data }) => {
       headers: {"Content-Type": "appplication/x-www-form-urlencoded"}, 
       body: encode({
         "form-name": form.getAttribute("name"), 
-        ...{
-          "name": 'nich', 
-          "email": 'nichemail',
-          "message": 'nich', 
-          "subject": 'nichemail'
-        }
-        // ...contactForm
+        ...contactForm
       })
     })
       .then(() => navigate(form.getAttribute("action")))
