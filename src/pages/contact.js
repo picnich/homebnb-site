@@ -35,7 +35,13 @@ const Contact = ({ data }) => {
       headers: {"Content-Type": "appplication/x-www-form-urlencoded"}, 
       body: encode({
         "form-name": form.getAttribute("name"), 
-        ...contactForm
+        ...{
+          "name": 'nich', 
+          "email": 'nichemail',
+          "message": 'nich', 
+          "subject": 'nichemail'
+        }
+        // ...contactForm
       })
     })
       .then(() => navigate(form.getAttribute("action")))
@@ -67,8 +73,8 @@ const Contact = ({ data }) => {
                 netlify-honeypot="bot-field"
                 onSubmit={handleSubmit}              
               >
-              <input type="hidden" name="form-name" value="contact" />
               <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="contact" />
               <label htmlFor="fullname">
                 YOUR NAME
                 <input 
