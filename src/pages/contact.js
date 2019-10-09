@@ -64,8 +64,8 @@ const Contact = ({ data }) => {
                 method="POST" 
                 action="/success/" 
                 data-netlify="true" 
+                netlify-honeypot="bot-field"
                 onSubmit={handleSubmit}              
-                data-netlify-honeypot="bot-field"
               >
               <input type="hidden" name="form-name" value="contact" />
               <input type="hidden" name="bot-field" />
@@ -101,10 +101,10 @@ const Contact = ({ data }) => {
               <label htmlFor="message">
                 YOUR MESSAGE
                 <textarea
-                name="message"
-                placeholder="Type your message here..." 
-                onChange={handleChange} 
-                required />
+                  name="message"
+                  placeholder="Type your message here..." 
+                  onChange={handleChange} 
+                  required />
               </label>
               <input type="submit" value="Get your Estimate" />
             </form>
