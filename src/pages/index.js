@@ -70,8 +70,8 @@ const Index = ({ data }) => {
               onSubmit={handleSubmit}              
               data-netlify-honeypot="bot-field"
             >
-              <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="homeEstimate" />
+              <input type="hidden" name="bot-field" />
               <label htmlFor="introEmail">
                 YOUR EMAIL
                 <input id="introEmail" onChange={handleChange} name="email" type="email" placeholder="john@gmail.com" required />
@@ -186,8 +186,8 @@ const Index = ({ data }) => {
               onSubmit={handleSubmit} 
               data-netlify-honeypot="bot-field"
             >
-              <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="homeEstimate" />
+              <input type="hidden" name="bot-field" />
               <label htmlFor="ctaEmail">
                 YOUR EMAIL
                 <input id="ctaEmail" onChange={handleChange} name="email" type="email" placeholder="john@gmail.com" required/>
