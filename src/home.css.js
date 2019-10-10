@@ -349,6 +349,11 @@ export const CtaContainer = styled.section`
     }
     > div:last-child {
         background: #0B2A66;
+        grid-column: span 2;
+        text-align: center;
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
 
         h2 {
             color: white;

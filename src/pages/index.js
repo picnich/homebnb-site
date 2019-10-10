@@ -169,7 +169,7 @@ const Index = ({ data }) => {
   
       <Box>
         <CtaContainer>
-          <div>
+          {/* <div>
             <Title as="h5" size="small">
               {data.homeJson.cta_1.smalltitle}
             </Title>
@@ -203,7 +203,7 @@ const Index = ({ data }) => {
               </div>
               <input type="submit" value="Get your Estimate" />
             </form>        
-          </div>
+          </div> */}
           <div>
             <Title as="h5" size="small">
               {data.homeJson.cta_2.smalltitle}
