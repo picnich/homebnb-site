@@ -68,27 +68,19 @@ const Index = ({ data }) => {
               action="/est-success/" 
               data-netlify="true" 
               onSubmit={handleSubmit}              
-              data-netlify-honeypot="bot-field"
             >
-              {/* <input type="hidden" name="bot-field" /> */}
-              <p hidden>
-                <label>
-                  Don’t fill this out: <input name="bot-field" onChange={handleChange} />
-                </label>
-              </p>
-
               <input type="hidden" name="form-name" value="homeEstimate" />
-              <label htmlFor="introEmail">
-                YOUR EMAIL
-                <input id="introEmail" onChange={handleChange} name="email" type="email" placeholder="john@gmail.com" />
-              </label>
+              <div>
+                <label htmlFor="introEmail">YOUR EMAIL</label>
+                <input onChange={handleChange} name="introEmail" type="email" placeholder="john@gmail.com" />
+              </div>
               <label htmlFor="introPostal">
                 YOUR POSTAL CODE
-                <input id="introPostal" onChange={handleChange} name="postal" type="text" placeholder="M4B 1B4" />
+                <input onChange={handleChange} name="introPostal" type="text" placeholder="M4B 1B4" />
               </label>
               <label htmlFor="introRooms">
                 NUMBER OF ROOMS
-                <select id="introRooms" onBlur={handleChange} name="rooms" >
+                <select onBlur={handleChange} name="introRooms">
                   <option value="one" selected>1</option>
                   <option value="two">2</option>
                   <option value="three">3</option>
@@ -190,33 +182,25 @@ const Index = ({ data }) => {
               action="/est-success/" 
               data-netlify="true" 
               onSubmit={handleSubmit} 
-              data-netlify-honeypot="bot-field"
             >
-              {/* <input type="hidden" name="bot-field" /> */}
-              <p hidden>
-                <label>
-                  Don’t fill this out: <input name="bot-field" onChange={handleChange} />
-                </label>
-              </p>
-
               <input type="hidden" name="form-name" value="homeCTAEstimate" />
-              <label htmlFor="ctaEmail">
-                YOUR EMAIL
-                <input id="ctaEmail" onChange={handleChange} name="email" type="email" placeholder="john@gmail.com"/>
-              </label>
-              <label htmlFor="ctaPostal">
-                YOUR POSTAL CODE
-                <input id="ctaPostal" onChange={handleChange} name="postal" type="text" placeholder="M4B 1B4"/>
-              </label>
-              <label htmlFor="ctaRooms">
-                NUMBER OF ROOMS
-                <select id="ctaRooms" onBlur={handleChange} name="rooms">
-                  <option value="one" selected>1</option>
-                  <option value="two">2</option>
-                  <option value="three">3</option>
-                  <option value="fourplus">4+</option>
-                </select>
-              </label>
+              <div>
+                <label htmlFor="ctaEmail">YOUR EMAIL</label>
+                <input onChange={handleChange} name="ctaEmail" type="email" placeholder="john@gmail.com"/>
+              </div>
+              <div>
+                <label htmlFor="ctaPostal">YOUR POSTAL CODE</label>
+                <input onChange={handleChange} name="ctaPostal" type="text" placeholder="M4B 1B4"/>
+              </div>
+              <div>
+                <label htmlFor="ctaRooms">NUMBER OF ROOMS</label>
+                <select onBlur={handleChange} name="ctaRooms">
+                    <option value="one" selected>1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="fourplus">4+</option>
+                  </select>
+              </div>
               <input type="submit" value="Get your Estimate" />
             </form>        
           </div>
