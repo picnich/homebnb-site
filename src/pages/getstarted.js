@@ -16,25 +16,25 @@ function encode(data) {
 }
 
 const GetStarted = ({ data }) => {
-  const [contactForm, setForm] = useState({})
+  const [form, setForm] = useState({})
 
   function handleChange(e) {
     setForm({
-      ...contactForm, 
+      ...form, 
       [e.target.name]: e.target.value
     })
   }
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(contactForm)
+    // console.log(form)
     const form = e.target;
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": form.getAttribute("name"),
-        ...contactForm
+        ...form
       })
     })
       .then(() => navigate(form.getAttribute("action")))
@@ -58,8 +58,8 @@ const GetStarted = ({ data }) => {
       <section style={{background: '#F1F2F6'}}>
         <Box>
           <FormContact>
-            <form name="contactForm" method="POST" data-netlify="true" action="/success/" onSubmit={handleSubmit}>
-              <input type="hidden" name="form-name" value="contactForm" />
+            <form name="getStartedForm" method="POST" data-netlify="true" action="/success/" onSubmit={handleSubmit}>
+              <input type="hidden" name="form-name" value="getStartedForm" />
               <div>
                 <label htmlFor="fullname">YOUR NAME</label>
                 <input name="fullname" type="text" placeholder="John Doe" onChange={handleChange} />
