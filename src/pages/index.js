@@ -179,7 +179,7 @@ const Index = ({ data }) => {
               {data.homeJson.cta_1.title}
             </Title>
             <form 
-              name="homeEstimate" 
+              name="homeCTAEstimate" 
               method="POST" 
               action="/est-success/" 
               data-netlify="true" 
@@ -187,7 +187,7 @@ const Index = ({ data }) => {
               data-netlify-honeypot="bot-field"
             >
               <input type="hidden" name="bot-field" />
-              <input type="hidden" name="form-name" value="homeEstimate" />
+              <input type="hidden" name="form-name" value="homeCTAEstimate" />
               <label htmlFor="ctaEmail">
                 YOUR EMAIL
                 <input id="ctaEmail" onChange={handleChange} name="email" type="email" placeholder="john@gmail.com" required/>
