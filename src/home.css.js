@@ -323,7 +323,7 @@ export const CtaContainer = styled.section`
     `};
 
 
-    div {
+    > div {
         background-color: white;
         padding: 24px;
         border-radius: 16px;
@@ -347,7 +347,7 @@ export const CtaContainer = styled.section`
     input[type="submit"] {
         margin-top: 24px;
     }
-    div:last-child {
+    > div:last-child {
         background: #0B2A66;
 
         h2 {
