@@ -130,5 +130,6 @@ export default createGlobalStyle`
     color: white;
     cursor: pointer;
     max-height: 50px;
+    -webkit-appearance: none;
   }
 `;
