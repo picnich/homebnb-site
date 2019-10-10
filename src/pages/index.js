@@ -81,7 +81,7 @@ const Index = ({ data }) => {
               <div>
                 <label htmlFor="introRooms">NUMBER OF ROOMS</label>
                 <select onBlur={handleChange} name="introRooms">
-                  <option value="one" selected>1</option>
+                  <option value="one" defaultValue>1</option>
                   <option value="two">2</option>
                   <option value="three">3</option>
                   <option value="fourplus">4+</option>
@@ -195,7 +195,7 @@ const Index = ({ data }) => {
               <div>
                 <label htmlFor="ctaRooms">NUMBER OF ROOMS</label>
                 <select onBlur={handleChange} name="ctaRooms">
-                    <option value="one" selected>1</option>
+                    <option value="one" defaultValue>1</option>
                     <option value="two">2</option>
                     <option value="three">3</option>
                     <option value="fourplus">4+</option>
