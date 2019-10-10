@@ -30,15 +30,15 @@ const Contact = ({ data }) => {
     e.preventDefault();
     // console.log(contactForm);
     const form = e.target;
-    fetch("/", {
-      method: "POST", 
-      headers: {"Content-Type": "appplication/x-www-form-urlencoded"}, 
+    fetch('/', {
+      method: 'POST', 
+      headers: {'Content-Type': 'appplication/x-www-form-urlencoded'}, 
       body: encode({
-        "form-name": form.getAttribute("name"), 
+        'form-name': form.getAttribute('name'), 
         ...contactForm
       })
     })
-      .then(() => navigate(form.getAttribute("action")))
+      .then(() => navigate(form.getAttribute('action')))
       .catch(error => alert(error));
   }
 
@@ -61,13 +61,13 @@ const Contact = ({ data }) => {
           <FormContact>
             <form 
                 name="contact" 
-                method="POST" 
+                method="post" 
                 action="/success/" 
                 data-netlify="true" 
-                netlify-honeypot="bot-field"
+                data-netlify-honeypot="bot-field"
                 onSubmit={handleSubmit}              
               >
-              <input type="hidden" name="bot-field" />
+              {/* <input type="hidden" name="bot-field" /> */}
               <input type="hidden" name="form-name" value="contact" />
               <label htmlFor="fullname">
                 YOUR NAME
