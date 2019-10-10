@@ -53,6 +53,7 @@ const Index = ({ data }) => {
             <Title as="h1" size="large">
               {data.homeJson.title}
             </Title>
+            <p className="notif">only available in canada</p>
           </MainTitle>
         </Box>
       </IntroSection>

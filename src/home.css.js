@@ -9,7 +9,7 @@ export const MainTitle = styled.section`
         letter-spacing: 1px;
         opacity: 0.4;
         margin-bottom: 8px;
-        color: white;
+        color: #252e64;
         
         ${MEDIA.PHONE`
             font-size: 10px;
@@ -31,6 +31,18 @@ export const MainTitle = styled.section`
     p {
         color: rgba(255, 255, 255, 0.76);
         margin-top: 16px;
+    }
+    p.notif {
+        background: #e9b5ba;
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #252e64;
+        font-size: 10px;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
     }
 
 `
@@ -337,7 +349,7 @@ export const CtaContainer = styled.section`
             font-weight: bold;
             letter-spacing: 0.5px;
             font-size: 13px;
-            color: #FF6666;
+            color: #E57A7A;
             margin-bottom: 16px;
         }
     }
