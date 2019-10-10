@@ -76,7 +76,7 @@ const Index = ({ data }) => {
               </div>
               <div>
                 <label htmlFor="introPostal">YOUR POSTAL CODE</label>
-                <input onChange={handleChange} name="introPostal" type="text" placeholder="M4B 1B4" />~
+                <input onChange={handleChange} name="introPostal" type="text" placeholder="M4B 1B4" />
               </div>
               <div>
                 <label htmlFor="introRooms">NUMBER OF ROOMS</label>
