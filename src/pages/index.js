@@ -72,21 +72,21 @@ const Index = ({ data }) => {
               <input type="hidden" name="form-name" value="homeEstimate" />
               <div>
                 <label htmlFor="introEmail">YOUR EMAIL</label>
-                <input onChange={handleChange} name="introEmail" type="email" placeholder="john@gmail.com" />
+                <input onChange={handleChange} name="introEmail" type="text" placeholder="john@gmail.com" />
               </div>
-              <label htmlFor="introPostal">
-                YOUR POSTAL CODE
-                <input onChange={handleChange} name="introPostal" type="text" placeholder="M4B 1B4" />
-              </label>
-              <label htmlFor="introRooms">
-                NUMBER OF ROOMS
+              <div>
+                <label htmlFor="introPostal">YOUR POSTAL CODE</label>
+                <input onChange={handleChange} name="introPostal" type="text" placeholder="M4B 1B4" />~
+              </div>
+              <div>
+                <label htmlFor="introRooms">NUMBER OF ROOMS</label>
                 <select onBlur={handleChange} name="introRooms">
                   <option value="one" selected>1</option>
                   <option value="two">2</option>
                   <option value="three">3</option>
                   <option value="fourplus">4+</option>
                 </select>
-              </label>
+              </div>
               <input type="submit" value="Get your Estimate" />
             </form>
           </FormSection>
@@ -186,7 +186,7 @@ const Index = ({ data }) => {
               <input type="hidden" name="form-name" value="homeCTAEstimate" />
               <div>
                 <label htmlFor="ctaEmail">YOUR EMAIL</label>
-                <input onChange={handleChange} name="ctaEmail" type="email" placeholder="john@gmail.com"/>
+                <input onChange={handleChange} name="ctaEmail" type="text" placeholder="john@gmail.com"/>
               </div>
               <div>
                 <label htmlFor="ctaPostal">YOUR POSTAL CODE</label>
