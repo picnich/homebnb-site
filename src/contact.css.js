@@ -43,6 +43,7 @@ export const FormContact = styled.section`
             grid-column: span 2;
         }
 
+        .onecol,
         div:nth-child(2),
         div:nth-child(3) {
             grid-column: span 1;

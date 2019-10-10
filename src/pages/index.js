@@ -213,7 +213,7 @@ const Index = ({ data }) => {
               {data.homeJson.cta_2.title}
             </Title>
             <p>{data.homeJson.cta_2.copy}</p>
-            <Link to="/contact">
+            <Link to="/getstarted">
               <button>{data.homeJson.cta_2.btn}</button>
             </Link>
           </div>

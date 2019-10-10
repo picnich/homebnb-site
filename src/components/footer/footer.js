@@ -9,6 +9,9 @@ const Footer = () => (
       <li>
         <Link to="/contact">contact</Link>
       </li>
+      <li>
+        <Link to="/getstarted">Get Started</Link>
+      </li>
     </ul>
   </Container>
 );

@@ -5,12 +5,17 @@ export const MainTitle = styled.section`
     max-width: 650px;
     h5 {
         font-weight: bold;
-        font-size: 12px;
-        letter-spacing: 1px;
-        opacity: 0.4;
         margin-bottom: 8px;
+        background: #e9b5ba;
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
         color: #252e64;
-        
+        font-size: 10px;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+
         ${MEDIA.PHONE`
             font-size: 10px;
         `};
@@ -31,20 +36,11 @@ export const MainTitle = styled.section`
     p {
         color: rgba(255, 255, 255, 0.76);
         margin-top: 16px;
-    }
-    p.notif {
-        background: #e9b5ba;
-        display: inline-block;
-        padding: 6px 12px;
-        border-radius: 4px;
         text-transform: uppercase;
-        font-weight: bold;
         letter-spacing: 1px;
-        color: #252e64;
-        font-size: 10px;
-        box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        font-weight: bold;
+        font-size: 12px;
     }
-
 `
 export const IntroSection = styled.section`
     background: linear-gradient(289deg, #101c2d 0%, rgb(35, 69, 115) 100%);
@@ -52,13 +48,21 @@ export const IntroSection = styled.section`
     padding-bottom: 12vh;
     background-image: url(${props => props.bgImg});
     background-size: cover;
-    background-position: center top;
+    background-position: left top;
+
+    @media screen and (max-width: 1440px) {
+        background-position: 10% top;
+    }
+    @media screen and (max-width: 1147px) {
+        background-position: 25% top;
+    }
 
     ${MEDIA.TABLET`
-      min-height: 30vh;  
+        background-position: 40% top;
+        min-height: 30vh;  
 
-      display: flex;
-      align-items: flex-end;
+        display: flex;
+        align-items: flex-end;
     `}
     
 
