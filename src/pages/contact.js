@@ -59,58 +59,24 @@ const Contact = ({ data }) => {
       <section style={{background: '#F1F2F6'}}>
         <Box>
           <FormContact>
-            <form 
-                name="contact" 
-                method="post" 
-                action="/success/" 
-                data-netlify="true" 
-                data-netlify-honeypot="bot-field"
-                onSubmit={handleSubmit}              
-              >
-              {/* <input type="hidden" name="bot-field" /> */}
-              <p hidden>
-                <label>
-                  Don’t fill this out: <input name="bot-field" onChange={handleChange} />
-                </label>
-              </p>
+            <form name="contact" method="POST" data-netlify="true" action="/success/" onSubmit={handleSubmit}>
               <input type="hidden" name="form-name" value="contact" />
-              <label htmlFor="fullname">
-                YOUR NAME
-                <input 
-                  // id="name" 
-                  name="fullname" 
-                  type="text" 
-                  placeholder="John Doe" 
-                  onChange={handleChange} 
-                  required />
-              </label>
-              <label htmlFor="email">
-                YOUR EMAIL
-                <input 
-                  // id="introEmail" 
-                  name="email" 
-                  type="email" 
-                  placeholder="john@gmail.com" 
-                  onChange={handleChange} 
-                  required />
-              </label>
-              <label htmlFor="subject">
-                YOUR SUBJECT
-                <input 
-                  // id="introSubject" 
-                  name="subject" 
-                  type="text" 
-                  placeholder="Subject..." 
-                  onChange={handleChange} />
-              </label>
-              <label htmlFor="message">
-                YOUR MESSAGE
-                <textarea
-                  name="message"
-                  placeholder="Type your message here..." 
-                  onChange={handleChange} 
-                  required />
-              </label>
+              <div>
+                <label htmlFor="fullname">YOUR NAME</label>
+                <input name="fullname" type="text" placeholder="John Doe" onChange={handleChange} required />
+              </div>
+              <div>
+                <label htmlFor="email">YOUR EMAIL</label>
+                <input name="email" type="email" placeholder="john@gmail.com" onChange={handleChange} required />
+              </div>
+              <div>
+                <label htmlFor="subject">YOUR SUBJECT</label>
+                <input name="subject" type="text" placeholder="Subject..." onChange={handleChange} />
+              </div>
+              <div>
+                <label htmlFor="message">YOUR MESSAGE</label>
+                  <textarea name="message" placeholder="Type your message here..." onChange={handleChange} required />
+              </div>
               <input type="submit" value="Get your Estimate" />
             </form>
           </FormContact>

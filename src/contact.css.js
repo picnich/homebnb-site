@@ -37,13 +37,14 @@ export const FormContact = styled.section`
             grid-gap: 8px;
         `};
         
+        div,
         label, 
         input[type="submit"] {
             grid-column: span 2;
         }
 
-        label:nth-child(3),
-        label:nth-child(4) {
+        div:nth-child(2),
+        div:nth-child(3) {
             grid-column: span 1;
         }
     }
