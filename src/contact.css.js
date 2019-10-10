@@ -42,8 +42,8 @@ export const FormContact = styled.section`
             grid-column: span 2;
         }
 
-        label:nth-child(1),
-        label:nth-child(2) {
+        label:nth-child(3),
+        label:nth-child(4) {
             grid-column: span 1;
         }
     }
