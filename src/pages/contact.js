@@ -11,34 +11,33 @@ import { FormContact } from "../contact.css"
 
 function encode(data) {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
 }
 
 const Contact = ({ data }) => {
-  const [contactForm, setcontactForm] = useState({});
+  const [contactForm, setForm] = useState({})
 
   function handleChange(e) {
-    setcontactForm({
+    setForm({
       ...contactForm, 
       [e.target.name]: e.target.value
     })
-    // console.log(contactForm);
   }
 
   function handleSubmit(e) {
     e.preventDefault();
-    // console.log(contactForm);
+    console.log(contactForm)
     const form = e.target;
-    fetch('/', {
-      method: 'POST', 
-      headers: {'Content-Type': 'appplication/x-www-form-urlencoded'}, 
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        'form-name': form.getAttribute('name'), 
+        "form-name": form.getAttribute("name"),
         ...contactForm
       })
     })
-      .then(() => navigate(form.getAttribute('action')))
+      .then(() => navigate(form.getAttribute("action")))
       .catch(error => alert(error));
   }
 
@@ -59,15 +58,15 @@ const Contact = ({ data }) => {
       <section style={{background: '#F1F2F6'}}>
         <Box>
           <FormContact>
-            <form name="contact" method="POST" data-netlify="true" action="/success/" onSubmit={handleSubmit}>
-              <input type="hidden" name="form-name" value="contact" />
+            <form name="contactForm" method="POST" data-netlify="true" action="/success/" onSubmit={handleSubmit}>
+              <input type="hidden" name="form-name" value="contactForm" />
               <div>
                 <label htmlFor="fullname">YOUR NAME</label>
-                <input name="fullname" type="text" placeholder="John Doe" onChange={handleChange} required />
+                <input name="fullname" type="text" placeholder="John Doe" onChange={handleChange} />
               </div>
               <div>
                 <label htmlFor="email">YOUR EMAIL</label>
-                <input name="email" type="text" placeholder="john@gmail.com" onChange={handleChange} required />
+                <input name="email" type="text" placeholder="john@gmail.com" onChange={handleChange} />
               </div>
               <div>
                 <label htmlFor="subject">YOUR SUBJECT</label>
@@ -75,9 +74,9 @@ const Contact = ({ data }) => {
               </div>
               <div>
                 <label htmlFor="message">YOUR MESSAGE</label>
-                <textarea name="message" placeholder="Type your message here..." onChange={handleChange} required />
+                <textarea name="message" placeholder="Type your message here..." onChange={handleChange} />
               </div>
-              <input type="submit" value="Get your Estimate" />
+              <input type="submit" value="Submit" />
             </form>
           </FormContact>
         </Box>
