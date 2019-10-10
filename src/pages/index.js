@@ -80,15 +80,15 @@ const Index = ({ data }) => {
               <input type="hidden" name="form-name" value="homeEstimate" />
               <label htmlFor="introEmail">
                 YOUR EMAIL
-                <input id="introEmail" onChange={handleChange} name="email" type="email" placeholder="john@gmail.com" required />
+                <input id="introEmail" onChange={handleChange} name="email" type="email" placeholder="john@gmail.com" />
               </label>
               <label htmlFor="introPostal">
                 YOUR POSTAL CODE
-                <input id="introPostal" onChange={handleChange} name="postal" type="text" placeholder="M4B 1B4" required />
+                <input id="introPostal" onChange={handleChange} name="postal" type="text" placeholder="M4B 1B4" />
               </label>
               <label htmlFor="introRooms">
                 NUMBER OF ROOMS
-                <select id="introRooms" onBlur={handleChange} name="rooms" required >
+                <select id="introRooms" onBlur={handleChange} name="rooms" >
                   <option value="one" selected>1</option>
                   <option value="two">2</option>
                   <option value="three">3</option>
@@ -202,15 +202,15 @@ const Index = ({ data }) => {
               <input type="hidden" name="form-name" value="homeCTAEstimate" />
               <label htmlFor="ctaEmail">
                 YOUR EMAIL
-                <input id="ctaEmail" onChange={handleChange} name="email" type="email" placeholder="john@gmail.com" required/>
+                <input id="ctaEmail" onChange={handleChange} name="email" type="email" placeholder="john@gmail.com"/>
               </label>
               <label htmlFor="ctaPostal">
                 YOUR POSTAL CODE
-                <input id="ctaPostal" onChange={handleChange} name="postal" type="text" placeholder="M4B 1B4" required/>
+                <input id="ctaPostal" onChange={handleChange} name="postal" type="text" placeholder="M4B 1B4"/>
               </label>
               <label htmlFor="ctaRooms">
                 NUMBER OF ROOMS
-                <select id="ctaRooms" onBlur={handleChange} name="rooms" required>
+                <select id="ctaRooms" onBlur={handleChange} name="rooms">
                   <option value="one" selected>1</option>
                   <option value="two">2</option>
                   <option value="three">3</option>
