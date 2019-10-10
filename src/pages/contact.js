@@ -67,7 +67,7 @@ const Contact = ({ data }) => {
               </div>
               <div>
                 <label htmlFor="email">YOUR EMAIL</label>
-                <input name="email" type="email" placeholder="john@gmail.com" onChange={handleChange} required />
+                <input name="email" type="text" placeholder="john@gmail.com" onChange={handleChange} required />
               </div>
               <div>
                 <label htmlFor="subject">YOUR SUBJECT</label>
@@ -75,7 +75,7 @@ const Contact = ({ data }) => {
               </div>
               <div>
                 <label htmlFor="message">YOUR MESSAGE</label>
-                  <textarea name="message" placeholder="Type your message here..." onChange={handleChange} required />
+                <textarea name="message" placeholder="Type your message here..." onChange={handleChange} required />
               </div>
               <input type="submit" value="Get your Estimate" />
             </form>
