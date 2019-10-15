@@ -8,22 +8,27 @@ export const Container = styled.nav`
     align-items: center;
 
     li {
-      text-transform: uppercase;
+      /* text-transform: uppercase; */
       font-size: 1.3rem;
 
       & + li {
-        margin-left: 2rem;
+        margin-left: 3rem;
       }
     }
     a {
       color: #F1F2F6;
+
+      :hover {
+        color: inherit;
+        opacity: 0.6;
+      }
     }
     .main {
       background: #F1F2F6;
       padding: 8px 16px;
       border-radius: 4px;
       a {
-        color: #0B2A66;
+        color: #9395d1;
       }
     }
   }
