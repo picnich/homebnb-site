@@ -18,6 +18,10 @@ export const Container = styled.header`
     font-family: "Roboto";
     position: relative;
     font-weight: bold;
+
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
   }
 
   a {
