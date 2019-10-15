@@ -16,7 +16,7 @@ export const Container = styled.nav`
       }
     }
     a {
-      color: #F1F2F6;
+      color: #234573;
 
       :hover {
         color: inherit;
