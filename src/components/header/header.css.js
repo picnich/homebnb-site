@@ -3,12 +3,20 @@ import MEDIA from 'helpers/mediaTemplates';
 
 export const Container = styled.header`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  /* align-items: center; */
   padding: 4rem;
-  position: absolute;
   width: 100%;
   box-sizing: border-box;
+  position: absolute;
+
+
+  section.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+}
 
   ${MEDIA.PHONE`
     padding: 2rem;
@@ -18,6 +26,7 @@ export const Container = styled.header`
     font-family: "Roboto";
     position: relative;
     font-weight: bold;
+    transform: translate(8px, 4px);
 
     @media screen and (max-width: 500px) {
       display: none;
@@ -38,7 +47,7 @@ export const Container = styled.header`
     }
   }
 
-  .iconContainer {
+  /* .iconContainer {
     background: #234573;
     border-radius: 100px;
     padding: 8px;
@@ -48,9 +57,9 @@ export const Container = styled.header`
     width: 32px;
     height: 32px;
     margin-right: 8px;
-  }
+  } */
 
   svg {
-    width: 20px;
+    width: 32px;
   }
 `;

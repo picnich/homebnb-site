@@ -3,14 +3,22 @@ import MEDIA from 'helpers/mediaTemplates';
 
 export const Container = styled.footer`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 4rem;
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   box-sizing: border-box;
-  box-shadow: inset 0px 1px 0px 0px rgba(113, 128, 150, 0.2);
 
+  section.container {
+    box-shadow: inset 0px 1px 0px 0px rgba(113, 128, 150, 0.2);
+    padding-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+  }
   ${MEDIA.PHONE`
     padding: 2rem;
   `};

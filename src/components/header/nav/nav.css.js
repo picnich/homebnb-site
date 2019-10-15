@@ -27,9 +27,9 @@ export const Container = styled.nav`
       background: #F1F2F6;
       padding: 8px 16px;
       border-radius: 4px;
-      a {
+      /* a {
         color: #9395d1;
-      }
+      } */
     }
   }
 `;
